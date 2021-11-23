@@ -1,0 +1,296 @@
+body {
+  background: rgb(36,0,32);
+background: linear-gradient(90deg, rgba(36,0,32,1) 0%, rgba(194,157,152,1) 0%, rgba(222,255,238,1) 100%, rgba(124,255,0,1) 100%);
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #B6B6B6;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+
+li {
+  display: inline-block;
+}
+
+section{
+ width: 100%;
+ height: 100vh;
+ position: relative;
+ 
+}
+
+.header{
+  width: 100%;
+  background-color: transparent;
+}
+
+.header .nav-bar{
+   width: 90%;
+   height: 80px;
+   line-height: 80px;
+   margin: auto;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 2px solid #fff;
+ }
+
+ .header .nav-bar .logo{
+  z-index: 2;
+}
+
+.header .nav-bar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header .nav-bar .menu{
+  z-index: 2;
+}
+
+.header .nav-bar .menu ul li{
+  margin-right: 30px;
+}
+
+.header .nav-bar .menu ul li a{
+   font-size: 18px;
+   font-weight: 500;
+   Letter-spacing: 2px;
+   padding: 10px;
+   border-radius: 5px;
+   text-transform: capitalize;
+   transition: all 0.5s;
+   opacity: 0.8;
+   color: #fff;
+}
+
+.header .nav-bar .menu ul li a.active {
+  opacity: 1;
+  background-color: #fff;
+  color: #000;
+}
+
+.header .nav-bar .menu ul li a:hover{
+ opacity: 1;
+ background-color: #fff;
+ color: #000;
+ }
+
+ .header .nav-bar .social-media{
+ z-index: 2;
+}
+.header .nav-bar .social-media ul li i{
+ width: 45px;
+ height: 45px;
+  Line-height: 45px;
+ margin-right: 5px;
+ text-align: center;
+ align-items: center;
+ font-size: 19px;
+ border-radius: 5px;
+                                                 I
+ background-color: #cac5c542;
+ box-shadow: 0 0 25px rgba(24,24,24,.4);
+ transition: all 0.3s;
+}
+
+body section {
+  background: white;
+  margin: 60px auto 120px;
+  border-top: 15px solid #002038;
+  text-align: center;
+  padding: 50px 0 110px;
+  width: 80%;
+  max-width: 1100px;
+}
+body section h1 {
+  margin-bottom: 40px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+form {
+  width: 58.3333333333%;
+  margin: 0 auto;
+}
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #002038;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field label + span {
+  font-family: 'SSStandard';
+  opacity: 0;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 7%;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 0 #cd6302;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"],
+form .field textarea {
+  border: none;
+  background: #E8E9EA;
+  width: 80.5%;
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 19.5%;
+  color: #002038;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+  height: 18px;
+  resize: none;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  padding-bottom: 150px;
+}
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: #f79600;
+  color: #002038;
+}
+form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+  color: #f79600;
+}
+form .field:hover label {
+  width: 18%;
+  background: #002038;
+  color: white;
+}
+form input[type="submit"] {
+  background: #f79600;
+  color: white;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form input[type="submit"]:hover {
+  background: #002038;
+  color: #f79600;
+}
+form input[type="submit"]:focus {
+  outline: none;
+  background: #cd6302;
+}
+
+.container{
+    margin-top: 450px;
+    position: absolute;
+    top: 50%;   width: 100%;
+    transform: translate(0,-50%);
+    text-align: center;
+}
+.container .box{
+    position: relative;
+    display: inline-block;
+    width: 250px;  height: 100px;
+    margin: 0 10px;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+.container .box span{
+    display: inline-block;
+    position: absolute;
+    top: 0;  left: 0;
+    width: 100%;  height: 100%;
+    text-align: center;  line-height: 100px;
+}
+.container .box span:nth-of-type(1){
+    font-size: 50px;
+    color: #fff;  background: rgba(0,0,0,.2);
+    transform: scale(1); opacity: 1;
+    transition: 1s;
+}
+.container .box:hover span:nth-of-type(1){
+    transform: scale(0); opacity: 0;
+}
+.container .box span:nth-of-type(2){
+    font-size: 30px;
+    color: #fff;
+    transform: scale(3);  opacity: 0;
+    transition: 1s;
+}
+.container .box:hover span:nth-of-type(2){
+    transform: scale(1);  opacity: 1;
+}
+.container .box:nth-of-type(1) span:nth-of-type(2){
+    background: #2196f3;
+}
+.container .box:nth-of-type(2) span:nth-of-type(2){
+    background: #f44336;
+}
+.container .box:nth-of-type(3) span:nth-of-type(2){
+    background: #4caf50;
+}
+@media (max-width:765px) {
+  form {
+    width: 100%;
+  }
+  body section {
+    width: 100%;
+  }
+}

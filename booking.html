@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Service Booking</title>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="booking.css">
+	<link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+	
+</head>
+<body>
+
+	<header class="header">
+ <div class="nav-bar">
+   <div class="logo">
+    <a href="Home.html">Auto Paradise</a>
+   </div>
+   <div class="menu">
+     <ul>
+      <li><a href="Home.html" class="active">Home</a></li>
+      <li><a href="cars.html">Sedan & Sports</a></li>
+      <li><a href="cars2.html">SUV</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="About Us.html">About-Us</a></li>
+      <li><a href="booking.html">Service Booking</a></li>
+      <li><a href="contact.html">Contact-Us</a></li>
+     </ul>
+   </div>
+
+    <div class="social-media">
+  <ul>
+    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+   <li><a href="https://twitter.com/home?lang=en"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+    
+  </ul>
+</div>
+</div>
+</header>
+
+	<main>
+ 	<class="form">
+   <div class="title">
+   <h1 id="title">Car Service Booking Form</h1>
+   <p id="description">Book an appointment for the car repair and maintenance service.</p>
+  </div>
+   <form id="survey-form" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+   
+     <label for="name" id="name-label" class="uno">Name</label>
+     <input type="text" id="name" placeholder="Enter your name" requiered>
+  
+     
+     <label for="email" id="email-label" class="uno">Email</label>
+     <input type="email" id="email" placeholder="Enter your email"  requiered>
+     
+     <label for="age" id="number-label" class="uno">Car Registration Number</label>
+     <input type="number" id="number" placeholder="Registration Number" requiered>
+
+     <p style="margin-bottom: 20px">Pick a Date and Time</p>
+
+     <input id="datetimepicker" placeholder="Date and Time" type="text" requiered>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+<script src="http://cdn.craig.is/js/rainbow-custom.min.js"></script>
+<script>
+      $(document).ready(function() {
+          $.datetimepicker.setLocale('pt-BR');
+        $('#datetimepicker').datetimepicker();
+      });
+</script>
+     
+     <label for="dropdown" id="dropdown-label" class="uno">Car Model</label>
+     <select id="dropdown" name="rol">
+       <option disable selected value>Select Your Choice</option>
+       <option value="student">Mercedes-Benz</option>
+       <option value="job">Audi</option>
+       <option value="freelancer">Hyundai</option>
+       <option value="hunting">Volkswagen</option>
+       <option value="hunting">Toyota</option>
+       <option value="hunting">Chevrolet</option>
+       <option value="hunting">Ford</option>
+       <option value="hunting">BMW</option>
+     </select>
+
+ 
+    
+    
+       <p class="uno">What Kind of Service You Looking For!</p>
+     <div class="check">
+     <label class="uno">
+     <input name="prefer" type="checkbox" value="Pre-purchase Car Inspection" class="checkbox-input">Pre-purchase Car Inspection</label>
+     <label class="uno">
+     <input name="prefer" type="checkbox" value="Brake Pad Replacement" class="checkbox-input">Brake Pad Replacement</label>
+
+     <label class="uno">
+   <input name="prefer" type="checkbox" value="Oil Chang" class="checkbox-input">Oil Change</label>
+     <label class="uno">
+   <input name="prefer" type="checkbox" value="Clutch & Transmission" class="checkbox-input">Clutch & Transmission</label>
+
+     <label class="uno">
+   <input name="prefer" type="checkbox" value="Battery Replacement" class="checkbox-input">Battery Replacement</label>
+       <label class="uno">
+   <input name="prefer" type="checkbox" value="Remote Start Installation" class="checkbox-input">Remote Start Installation</label>
+     </div>
+     
+     <p class="uno">Any Further Details You Want to Talk About Your Car-!</p>
+     <textarea id="message" class="textarea uno" name="message" placeholder="Enter your message here..."></textarea>
+     
+    
+     
+     <button type="submit" id="submit" class="submit uno">Send your reservation</button>
+     
+   </form>
+  </div>
+</main>
+
+</body>
+</html>
